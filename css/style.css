@@ -444,3 +444,28 @@ img {
   justify-content: space-between;
   align-items: flex-start;
 }
+.subckribe {
+display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.form-footer {
+}
+.label-subscribe {
+}
+.input-subscribe {
+}
+.bth-footer{
+  background-color: #4D5AE5;
+  border-radius: 4px;
+  padding: 8px 24px;
+  margin: 0;
+  gap: 8px;
+  justify-content: center;
+
+}
+.footer-subscribe{
+  fill: #FFFFFF ;
+}
+.footer-card {
+}
