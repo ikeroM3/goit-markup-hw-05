@@ -500,10 +500,10 @@
         </button>
      <p class="modal-text">Leave your contacts and we will call you back</p>
      
-       
+       <form class="form-list">
         <div class="fitback">
         <div class="wrapper-modal">
-          <label class="form-label" for="input-name"></label> Name</label>
+          <label class="form-label" for="input-name">Name</label>
           <div class="input-wrapper">
             <input class="modal-input" name="input-name" id="input-name" type="text" />
             <svg class="modal-icon" width="18" height="18">
@@ -512,43 +512,51 @@
           </div>
         </div>
           <div class="wrapper-modal">
-            <label class="form-label" for="input-name"></label>Phone</label>
+            <label class="form-label" for="input-phone">Phone</label>
             <div class="input-wrapper">
-              <input class="modal-input" name="input-name" id="input-name" type="text" />
+              <input class="modal-input" name="input-name" id="input-phone" type="tel" />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
           </div>
           <div class="wrapper-modal">
-            <label class="form-label" for="input-name"></label> Email</label>
+            <label class="form-label" for="input-email">Email</label>
             <div class="input-wrapper">
-              <input class="modal-input" name="input-name" id="input-name" type="text" />
+              <input class="modal-input" name="input-name" id="input-email" type="email" />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
-            
           </div>
 
-          <div class="wrapper-modal">
-          
-            <label class="wrapper-textarea" for="comment">
+          <div class="wrapper-modal"> 
+          <label class="wrapper-textarea" for="comment">
             Comment</label>
-            <div>
-            <textarea class="modal-input textarea" id="comment" rows="4">
-              </textarea>
+            <div class="div-textarea">
+            <textarea class="modal-input-textarea" id="comment" placeholder="Text input" rows="4"></textarea>
             </div>
-          
-        
+          </div>
+
+          <div class="form-agreement">
+            <input class="visually-hidden" type="checkbox" name="user-agreement"
+            id="user-agreement"/>
+            <label class="user-agreement" for="user-agreement">
+              <span class="agreement-cheackbox">
+                <svg class="agreement-cheackbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#cheakbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="accent-link" href="./index.html" target="_blank">Privacy Policy</a>
+            </label>
         </div>
+        <div class="bth-wrapper">
+          <button class="bth-modal" type="submit">Send</button>
+        </div>
+        </form>
       </div>
         </div>
-
-
-
-
-
     </div>
    </div>
      <script src="./modal.js"></script>

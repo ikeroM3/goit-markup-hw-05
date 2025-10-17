@@ -526,6 +526,8 @@ img {
   top: 50%;
   left: 50%;
   width: 408px;
+  padding: 24px;
+  padding-top: initial;
   min-height: 584px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -542,6 +544,7 @@ img {
   text-align: center;
   padding-top: 72px;
   margin-bottom: 16px;
+  color: #2e2f42;
 }
 .modal-close {
   fill: #2e2f42;
@@ -575,37 +578,144 @@ img {
 }
 
 .fitback {
-  padding: 0 24px;
 }
 .wrapper-modal {
   margin-bottom: 8px;
 }
 .form-label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 .input-wrapper {
+  position: relative;
   display: inline-flex;
+  align-items: center;
   width: 360px;
   align-items: center;
- 
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
 }
 .modal-input {
-  position: relative;
-  width: 360px;
+  width: 100%;
+  min-height: 40px;
+  padding: 8px;
+  padding-left: 38px;
+  outline: transparent;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+}
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
 }
 .modal-icon {
   position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
 }
-.textarea {
-  resize: none;
-}
+
 .wrapper-textarea {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
- <div class="wrapper-modal">
-          <label class="form-label" for="input-name"></label> Name</label>
-          <div class="input-wrapper">
-            <input class="modal-input" name="input-name" id="input-name" type="text" />
-            <svg class="modal-icon" width="18" height="18">
-              <use href="./images/icons.svg#person"></use>
-            </svg>
-          </div>
-        </div>
+
+.modal-input-textarea {
+  resize: none;
+  height: 120px;
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  outline: transparent;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.modal-input-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.modal-input-textarea::placeholder-shown {
+}
+.form-agreement {
+  margin-bottom: 24px;
+}
+.user-agreement {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.agreement-cheackbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  fill: transparent;
+  border-radius: 2px;
+  border: 1px solid #8e8f99;
+  margin-right: 8px;
+
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input[type="checkbox"]:checked + .user-agreement .agreement-cheackbox {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  fill: #fff;
+}
+.agreement-cheackbox-icon {
+}
+.text-privacy {
+}
+.accent-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.accent-link {
+  line-height: 133%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+.bth-modal {
+  display: block;
+  width: 169px;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+.bth-modal:hover,
+.bth-modal:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #404bbf;
+}
