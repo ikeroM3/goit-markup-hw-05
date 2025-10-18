@@ -669,7 +669,7 @@ img {
   width: 100%;
   padding: 8px 16px;
   outline: transparent;
-  border: 1px solid #2e2f42;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
   border-radius: 4px;
@@ -691,8 +691,7 @@ img {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-.modal-input-textarea::placeholder-shown {
-}
+
 .form-agreement {
   margin-bottom: 24px;
 }
