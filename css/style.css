@@ -553,7 +553,7 @@ img {
   top: 50%;
   left: 50%;
   width: 408px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   padding-top: initial;
   min-height: 584px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -576,6 +576,7 @@ img {
 .modal-close {
   fill: #2e2f42;
   stroke-width: 1px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-overlay.is-open {
   display: flex;
@@ -585,7 +586,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0;
-  border-radius: 100%;
+  border-radius: 50%;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -594,10 +595,14 @@ img {
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bth-close:hover,
 .bth-close:focus {
   background-color: #404bbf;
+  border: none;
 }
 .bth-close:hover .modal-close,
 .bth-close:focus .modal-close {
@@ -605,16 +610,18 @@ img {
 }
 
 .fitback {
+  margin-bottom: 8px;
 }
 .wrapper-modal {
   margin-bottom: 8px;
 }
 .form-label {
-  display: inline-block;
+  display: block;
   margin-bottom: 4px;
+  font-size: 12px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
