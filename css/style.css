@@ -473,7 +473,6 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
 }
 .input-subscribe {
   width: 264px;
@@ -517,6 +516,10 @@ img {
   letter-spacing: 0.04em;
   text-align: center;
   line-height: 1.5;
+}
+.bth-footer:hover,
+.bth-footer:focus {
+  background-color: #404bbf;
 }
 .footer-subscribe {
   margin-left: 16px;
